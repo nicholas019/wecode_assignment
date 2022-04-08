@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 10vw 10vw;
+}
+nav,
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+#nav1,
+#nav2,
+#nav3 {
+  display: none;
+}
+
+#nav1:checked ~ .main_1,
+#nav2:checked ~ .main_2,
+#nav3:checked ~ .main_3 {
+  display: block;
+}
+nav > div {
+  background-color: bisque;
+  height: 10vh;
+  padding: 3vh;
+  text-align: center;
+}

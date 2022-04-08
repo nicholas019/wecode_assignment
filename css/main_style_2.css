@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: white;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/index2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#grid {
+  margin: 5vw 18vw;
+  display: grid;
+  grid-template-columns: 0.8fr 3fr;
+}
+
+.my_ch {
+  border: 1px solid black;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 70%;
+}
+#side {
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  min-width: 180px;
+  min-height: 700px;
+  text-align: center;
+  border-right: 2px dashed black;
+}
+
+.side_in1 {
+  margin: 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid black;
+}
+
+.side_in2 {
+  margin: 40px 0;
+}
+
+.side_in1,
+.side_in2 > a {
+  text-decoration: none;
+}
+
+h2,
+h5 {
+  margin: 0;
+  color: black;
+}
+
+.main {
+  padding: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.main h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+
+nav input[type="radio"] {
+  display: none;
+}
+
+#tab-1:checked ~ .tab label:nth-child(1),
+#tab-2:checked ~ .tab label:nth-child(2),
+#tab-3:checked ~ .tab label:nth-child(3) {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.content > div {
+  display: none;
+}
+
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2),
+#tab-3:checked ~ .content div:nth-child(3) {
+  display: block;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+.tab {
+  overflow: hidden;
+  text-align: center;
+}
+
+.tab label {
+  font-size: 1rem;
+  float: left;
+  width: 33.3333%;
+  padding: 15px 0;
+  font-weight: bold;
+  letter-spacing: 10px;
+  line-height: 1;
+  font-size: 1.5em;
+  background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.8s;
+  cursor: pointer;
+}
+.tab label {
+  background-image: linear-gradient(transparent 80%, lightskyblue);
+}
+.tab label:hover {
+  background-size: 100% 100%;
+}
+
+.content {
+  min-height: 700px;
+}
+
+.content > div {
+  padding: 30px;
+  font-size: 1rem;
+}
+
+.content-dis_1 {
+  text-align: center;
+}
+
+span {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.content-dis_2 > img {
+  float: left;
+  margin: 20px 20px 10px 0;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.hobby1 {
+  margin: 10px 0 10px 0;
+  padding: 10px 10px 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hobby2 {
+  margin: 0 0 40px 0;
+}
+
+.content-dis_3 > span,
+p {
+  font-size: 1.4em;
+}
